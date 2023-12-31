@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% load static %}
+<div class="container text-center mt-5">
+  <h2>Team List</h2>
+
+  <div class="my-4">
+    <h3>Avengers</h3>
+    <a href="{% url 'avengers_list' %}">
+      <img width="300px", height="200px" src="{% static 'images/avengers_image.jpg' %}" alt="Avengers Image">
+    </a>
+  </div>
+
+  <div class="my-4">
+    <h3>Justice League</h3>
+    <a href="{% url 'justice_list' %}">
+      <img width="300px", height="200px" src="{% static 'images/justice_image.jpg' %}" alt="Justice League Image">
+    </a>
+  </div>
+
+  <div class="my-4">
+    <h3>No Team</h3>
+    <a href="{% url 'noteam_list' %}">
+      <img width="300px", height="500px" src="{% static 'images/noteam_image.jpg' %}" alt="Yugioh Card Image">
+    </a>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+body {
+    background-image: url('../images/bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.navbar {
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0d47a1; /* Dark blue background color */
+    color: white; /* White text color */
+    padding: 20px;
+    text-align: center;
+}
+
+/* Footer Columns */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer Links */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Social Icons */
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons li {
+    margin: 0 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+/* Copyright */
+.copyright {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.company {
+    font-size: 75px;
+    color: #ff9800; /* Orange color for superhero feel */
+    font-weight: 900;
+}
+.company_nav a {
+    text-decoration: none;
+    padding: 15px 15px;
+    color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    background-color: #0d47a1; /* Dark blue background color */
+    color: white; /* White text color */
+}
+
+th {
+    background-color: #2196f3; /* Light blue header background color */
+}
+
+/* Hover Effect */
+tr:hover {
+    background-color: #1565c0; /* Darker blue on hover */
+}
+.page-link{
+    text-decoration: none;
+    color: white; /* White text color */
+}
+
+.container_image {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0d47a1; /* Dark blue background color */
+    border: 1px solid #1565c0; /* Darker blue border */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff9800; /* Orange color for superhero feel */
+}
+
+p {
+    color: #e0e0e0; /* Light gray text color */
+}
+
+.with_image {
+    display: inline-block;
+}
+
+.container_image {
+    text-align: center;
+    display: inline-block;
+    margin: 0 60px 60px;
+    border: 1px solid #1565c0; /* Darker blue border */
+    width: 500px;
+    height: 1000px;
+}
+
+.dep_image .resized_image {
+    width: 450px;
+    height: 450px;
+}
+
+.th_center {
+    text-align: center;
+}
+
+img.resized_image {
+    width: 150px; /* Set the desired width for all images */
+    height: 150px; /* Set the desired height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+

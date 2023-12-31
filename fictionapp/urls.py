@@ -14,4 +14,11 @@ urlpatterns = [
     path('heroes_list.html', views.heroes_list, name='heroes_list'),
     path('antihero_list.html', views.antihero_list, name='antihero_list'),
     path('type_list.html', views.type_list, name='type_list'),
+    path('team_list.html', views.team_list, name='team_list'),
+    path('avengers_list.html', views.avengers_list, name='avengers_list'),
+    path('justice_list.html', views.justice_list, name='justice_list'),
+    path('noteam_list.html', views.noteam_list, name='noteam_list'),
+    path('male_list.html', views.male_list, name='male_list'),
+    path('female_list.html', views.female_list, name='female_list'),
+    path('sex_list.html', views.sex_list, name='sex_list'),
 ]

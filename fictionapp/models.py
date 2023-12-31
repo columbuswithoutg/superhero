@@ -40,11 +40,19 @@ class Team(BaseModel):
         JUSTICELEAGUE = 'Justice League', 'Justice League'
         NOTEAM = 'No Team', 'No Team'
 
-    name = models.CharField(max_length=50, choices=TeamChoices.choices, null=True)
+    name = models.CharField(max_length=50, choices=TeamChoices.choices, null=True, blank=True)
 
     def __str__(self):
         return self.name
+class Sex(BaseModel):
+    class SexChoices(models.TextChoices):
+        MALE = 'Male', 'Male'
+        FEMALE = 'Female', 'Female'
 
+    name = models.CharField(max_length=50, choices=SexChoices.choices)
+
+    def __str__(self):
+        return self.name
 
 class Hero(BaseModel):
     hero_name = models.CharField(max_length=200, default='Unknown')
@@ -54,6 +62,7 @@ class Hero(BaseModel):
     cinema_debut = models.DateTimeField(default=datetime(2020, 6, 8))
     comic = models.ForeignKey(Comic, on_delete=models.CASCADE)
     type  = models.ManyToManyField(Type)
+    sex  = models.ManyToManyField(Sex)
     team = models.ForeignKey(Team, on_delete=models.CASCADE, null=True)
 
     def __str__(self):

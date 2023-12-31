@@ -2,35 +2,36 @@
 
 {% block content %}
   {% load static %}
+  <div class="container text-center mt-5">
   <h2>Comic List</h2>
 
-  <div>
+  <div class="comic_list">
     <h3>DC</h3>
     <a href="{% url 'dc_list' %}">
-      <img src="{% static 'images/dc_image.jpg' %}" alt="DC Image">
+      <img class="resized_image" src="{% static 'images/dc_image.jpg' %}" alt="DC Image">
     </a>
   </div>
 
-  <div>
+  <div class="my-4">
     <h3>Marvel</h3>
     <a href="{% url 'marvel_list' %}">
-      <img src="{% static 'images/marvel_image.jpg' %}" alt="Marvel Image">
+      <img class="resized_image" src="{% static 'images/marvel_image.jpg' %}" alt="Marvel Image">
     </a>
   </div>
 
-  <div>
+  <div class="my-4">
     <h3>Anime</h3>
     <a href="{% url 'anime_list' %}">
-      <img src="{% static 'images/anime_image.jpg' %}" alt="Anime Image">
+      <img class="resized_image" src="{% static 'images/anime_image.jpg' %}" alt="Anime Image">
     </a>
   </div>
 
-  <div>
+  <div class="my-4">
     <h3>Live Action</h3>
     <a href="{% url 'liveaction_list' %}">
-      <img src="{% static 'images/live_action_image.jpg' %}" alt="Live Action Image">
+      <img width="200px", height="200px" src="{% static 'images/live_action_image.jpg' %}" alt="Live Action Image">
     </a>
   </div>
-
+</div>
 {% endblock %}
 
