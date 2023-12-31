@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% load static %}
+  <h2>Hero Characters</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Hero Name</th>
+        <th>Civilian Name</th>
+        <th>Email</th>
+        <th>Birth Date</th>
+        <th>Cinema Debut</th>
+        <th>Comic</th>
+        <th>Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for hero in heroes %}
+        <tr>
+          <td>{{ hero.hero_name }}</td>
+          <td>{{ hero.civilian_name }}</td>
+          <td>{{ hero.email }}</td>
+          <td>{{ hero.birth_date }}</td>
+          <td>{{ hero.cinema_debut }}</td>
+          <td>{{ hero.comic.name }}</td>
+          <td>
+            {% for type in hero.type.all %}
+              {{ type.name }}{% if not forloop.last %}, {% endif %}
+            {% endfor %}
+          </td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+{% endblock %}

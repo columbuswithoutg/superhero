@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+    <div class="text-center">
+        <h1>Fictional Characters</h1>
+        <h1 class="display-4">Welcome to the Fictional Character Database!</h1>
+        <p class="lead">Explore our collection of legendary heroes and villains.</p>
+        <hr class="my-4">
+        <p>Discover their origins, powers, and team affiliations.</p>
+        <a class="btn btn-primary btn-lg" href="{% url 'hero_list' %}" role="button">Explore Heroes</a>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% load static %}
+  <div class="container text-center mt-5">
+    <h2>Type List</h2>
+
+    <div class="my-4">
+      <h3>Villain</h3>
+      <a href="{% url 'villain_list' %}">
+        <img class="resized_image" src="{% static 'images/villain_image.jpg' %}" alt="Villain Image">
+      </a>
+    </div>
+
+    <div class="my-4">
+      <h3>Hero</h3>
+      <a href="{% url 'heroes_list' %}">
+        <img class="resized_image" src="{% static 'images/hero_image.jpg' %}" alt="Hero Image">
+      </a>
+    </div>
+
+    <div class="my-4">
+      <h3>Antihero</h3>
+      <a href="{% url 'antihero_list' %}">
+        <img width="300px" height="200px" src="{% static 'images/antihero_image.jpg' %}" alt="Antihero Image">
+      </a>
+    </div>
+  </div>
+{% endblock %}
+

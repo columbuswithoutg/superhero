@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  {% load static %}
+<div class="container text-center mt-5">
+  <h2>Sex List</h2>
+
+  <div class="my-4">
+    <h3>Male</h3>
+    <a href="{% url 'male_list' %}">
+      <img width="300px", height="200px" src="{% static 'images/male_image.jpg' %}" alt="Male Logo">
+    </a>
+  </div>
+
+  <div class="my-4">
+    <h3>Female</h3>
+    <a href="{% url 'female_list' %}">
+      <img width="300px", height="200px" src="{% static 'images/female_image.jpg' %}" alt="Female Logo">
+    </a>
+  </div>
+{% endblock %}
